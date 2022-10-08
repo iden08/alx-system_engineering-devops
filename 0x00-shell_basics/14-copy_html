@@ -1,2 +1,10 @@
 #!/bin/bash
-ln -s target_file link_name
+cd ../folder_source
+
+for f in *.html
+	 
+do
+    
+    cp -v "$f"  ../../folder_destination/"${f%.html}".html
+    
+done
